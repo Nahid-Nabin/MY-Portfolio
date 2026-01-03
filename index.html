@@ -49,6 +49,40 @@
     animation: gradientShift 4s ease infinite;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+.social-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  color: #fff; /* icon color */
+  background: linear-gradient(135deg, #ff0000, #ff5f5f);
+  transition: transform 0.3s ease;
+}
+
+.social-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #ff5f5f, #ff0000);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.social-link:hover::before {
+  opacity: 1;
+}
+
+.social-link svg {
+  position: relative;
+  z-index: 1;
+  fill: currentColor;
+}
+
 
 /* Glow on hover */
 .logo img:hover {
@@ -1050,3 +1084,4 @@
 </body>
 
 </html>
+
