@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection - NOIR ESSENCE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="perfume_style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <div class="logo">NOIR ESSENCE</div>
+        <ul class="nav-links">
+            <li><a href="perfume.html">HOME</a></li>
+            <li><a href="collection.html" class="active">COLLECTION</a></li>
+            <li><a href="perfume.html">ABOUT</a></li>
+            <li><a href="perfume.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Collection Hero -->
+    <section class="collection-hero">
+        <div class="collection-hero-content">
+            <div class="hero-badge">DISCOVER</div>
+            <h1>Our Collection</h1>
+            <p>Explore our exquisite range of luxury fragrances, each crafted to perfection</p>
+        </div>
+    </section>
+
+    <!-- Collection Grid -->
+    <section class="collection-section">
+        <div class="collection-filters">
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <button class="filter-btn" data-filter="feminine">FEMININE</button>
+            <button class="filter-btn" data-filter="masculine">MASCULINE</button>
+            <button class="filter-btn" data-filter="unisex">UNISEX</button>
+        </div>
+
+        <div class="collection-grid" id="collectionGrid">
+            <!-- Product 1 -->
+            <div class="perfume-card reveal" data-category="feminine" onclick="window.location.href='product.html?id=rose-eternelle'">
+                <div class="perfume-image">
+                    <div class="bottle-icon">🌹</div>
+                </div>
+                <div class="perfume-details">
+                    <div class="perfume-category">FLORAL • FEMININE</div>
+                    <h3 class="perfume-name">Rose Éternelle</h3>
+                    <p class="perfume-description">
+                        A timeless blend of Bulgarian rose, jasmine, and sandalwood. 
+                        Elegant, sophisticated, unforgettable.
+                    </p>
+                    <div class="perfume-price">$285</div>
+                    <span class="perfume-link">VIEW DETAILS</span>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="perfume-card reveal" data-category="masculine" onclick="window.location.href='product.html?id=oud-mystique'">
+                <div class="perfume-image">
+                    <div class="bottle-icon">🪵</div>
+                </div>
+                <div class="perfume-details">
+                    <div class="perfume-category">WOODY • MASCULINE</div>
+                    <h3 class="perfume-name">Oud Mystique</h3>
+                    <p class="perfume-description">
+                        Rich oud wood with notes of leather, amber, and spice. 
+                        Bold, mysterious, captivating.
+                    </p>
+                    <div class="perfume-price">$320</div>
+                    <span class="perfume-link">VIEW DETAILS</span>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="perfume-card reveal" data-category="unisex" onclick="window.location.href='product.html?id=lumiere-dete'">
+                <div class="perfume-image">
+                    <div class="bottle-icon">☀️</div>
+                </div>
+                <div class="perfume-details">
+                    <div class="perfume-category">CITRUS • UNISEX</div>
+                    <h3 class="perfume-name">Lumière d'Été</h3>
+                    <p class="perfume-description">
+                        Fresh bergamot and neroli with hints of white tea and musk. 
+                        Bright, invigorating, timeless.
+                    </p>
+                    <div class="perfume-price">$265</div>
+                    <span class="perfume-link">VIEW DETAILS</span>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="perfume-card reveal" data-category="feminine" onclick="window.location.href='product.html?id=velvet-noir'">
+                <div class="perfume-image">
+                    <div class="bottle-icon">🌙</div>
+                </div>
+                <div class="perfume-details">
+                    <div class="perfume-category">ORIENTAL • FEMININE</div>
+                    <h3 class="perfume-name">Velvet Noir</h3>
+                    <p class="perfume-description">
+                        Sensual vanilla and tonka bean with dark chocolate and patchouli. 
+                        Warm, seductive, luxurious.
+                    </p>
+                    <div class="perfume-price">$295</div>
+                    <span class="perfume-link">VIEW DETAILS</span>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="perfume-card reveal" data-category="masculine" onclick="window.location.href='product.html?id=azure-coast'">
+                <div class="perfume-image">
+                    <div class="bottle-icon">🌊</div>
+                </div>
+                <div class="perfume-details">
+                    <div class="perfume-category">FRESH • MASCULINE</div>
+                    <h3 class="perfume-name">Azure Coast</h3>
+                    <p class="perfume-description">
+                        Marine notes with lavender, sage, and cedarwood. 
+                        Clean, sophisticated, refined.
+                    </p>
+                    <div class="perfume-price">$275</div>
+                    <span class="perfume-link">VIEW DETAILS</span>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="perfume-card reveal" data-category="unisex" onclick="window.location.href='product.html?id=amber-royale'">
+                <div class="perfume-image">
+                    <div class="bottle-icon">👑</div>
+                </div>
+                <div class="perfume-details">
+                    <div class="perfume-category">SPICY • UNISEX</div>
+                    <h3 class="perfume-name">Amber Royale</h3>
+                    <p class="perfume-description">
+                        Rich amber with cardamom, saffron, and iris. 
+                        Opulent, intense, regal.
+                    </p>
+                    <div class="perfume-price">$340</div>
+                    <span class="perfume-link">VIEW DETAILS</span>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="perfume-card reveal" data-category="feminine" onclick="window.location.href='product.html?id=gardenia-blanche'">
+                <div class="perfume-image">
+                    <div class="bottle-icon">🌸</div>
+                </div>
+                <div class="perfume-details">
+                    <div class="perfume-category">FLORAL • FEMININE</div>
+                    <h3 class="perfume-name">Gardenia Blanche</h3>
+                    <p class="perfume-description">
+                        Pure gardenia with tuberose and white amber. 
+                        Delicate, romantic, ethereal.
+                    </p>
+                    <div class="perfume-price">$270</div>
+                    <span class="perfume-link">VIEW DETAILS</span>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="perfume-card reveal" data-category="masculine" onclick="window.location.href='product.html?id=noir-intense'">
+                <div class="perfume-image">
+                    <div class="bottle-icon">🖤</div>
+                </div>
+                <div class="perfume-details">
+                    <div class="perfume-category">WOODY • MASCULINE</div>
+                    <h3 class="perfume-name">Noir Intense</h3>
+                    <p class="perfume-description">
+                        Intense vetiver with black pepper and tobacco. 
+                        Powerful, confident, unforgettable.
+                    </p>
+                    <div class="perfume-price">$310</div>
+                    <span class="perfume-link">VIEW DETAILS</span>
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="perfume-card reveal" data-category="unisex" onclick="window.location.href='product.html?id=silk-oud'">
+                <div class="perfume-image">
+                    <div class="bottle-icon">✨</div>
+                </div>
+                <div class="perfume-details">
+                    <div class="perfume-category">ORIENTAL • UNISEX</div>
+                    <h3 class="perfume-name">Silk & Oud</h3>
+                    <p class="perfume-description">
+                        Smooth oud with silk musk and cashmere woods. 
+                        Luxurious, enveloping, mesmerizing.
+                    </p>
+                    <div class="perfume-price">$355</div>
+                    <span class="perfume-link">VIEW DETAILS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-brand">NOIR ESSENCE</div>
+                <p class="footer-description">
+                    Luxury perfume boutique offering exquisite, handcrafted fragrances 
+                    created by master perfumers using the world's finest ingredients.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="collection.html">All Fragrances</a></li>
+                    <li><a href="collection.html">Men's Collection</a></li>
+                    <li><a href="collection.html">Women's Collection</a></li>
+                    <li><a href="collection.html">Unisex</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="perfume.html#contact">Private Consultation</a></li>
+                    <li><a href="perfume.html#contact">Custom Fragrance</a></li>
+                    <li><a href="perfume.html#contact">Gift Wrapping</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="#">123 Luxury Avenue</a></li>
+                    <li><a href="#">New York, NY 10022</a></li>
+                    <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                    <li><a href="mailto:info@noiressence.com">info@noiressence.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 Noir Essence. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Pinterest">📌</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const perfumeCards = document.querySelectorAll('.perfume-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                perfumeCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.classList.add('visible');
+                        }, 10);
+                    } else {
+                        card.classList.remove('visible');
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

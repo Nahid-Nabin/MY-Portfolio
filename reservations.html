@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Bella Cucina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="logo">BELLA CUCINA</div>
+        <ul class="nav-links">
+            <li><a href="resturent.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="reservations.html" class="active">RESERVATIONS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="mobile-menu-toggle">☰</div>
+    </nav>
+
+    <section class="page-hero reservations-hero">
+        <div class="page-hero-content">
+            <h1>Reservations</h1>
+            <p>Book your table for an unforgettable dining experience</p>
+        </div>
+    </section>
+
+    <section class="reservation-form-section">
+        <div class="reservation-container">
+            <div class="reservation-info">
+                <h2>Reserve Your Table</h2>
+                <p>We recommend making reservations, especially for weekend evenings. Walk-ins are welcome subject to availability.</p>
+                
+                <div class="reservation-details">
+                    <div class="detail-item">
+                        <h3>📞 Call Us</h3>
+                        <p>(555) 123-4567</p>
+                        <p class="detail-note">Available Mon-Sun, 12:00 PM - 9:00 PM</p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h3>🕐 Operating Hours</h3>
+                        <p>Monday - Thursday: 5:00 PM - 10:00 PM</p>
+                        <p>Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                        <p>Sunday: 4:00 PM - 9:00 PM</p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h3>👥 Group Reservations</h3>
+                        <p>For parties of 8 or more, please call us directly to discuss your requirements.</p>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h3>🎉 Private Events</h3>
+                        <p>We offer private dining for special occasions. Contact us for more information about our event spaces.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reservation-form-wrapper">
+                <form class="reservation-form" action="YOUR_GOOGLE_FORM_URL_HERE" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests *</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select...</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7">7 Guests</option>
+                                <option value="8+">8+ Guests (we'll call you)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time *</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select time...</option>
+                                <option value="4:00 PM">4:00 PM</option>
+                                <option value="5:00 PM">5:00 PM</option>
+                                <option value="6:00 PM">6:00 PM</option>
+                                <option value="7:00 PM">7:00 PM</option>
+                                <option value="8:00 PM">8:00 PM</option>
+                                <option value="9:00 PM">9:00 PM</option>
+                                <option value="10:00 PM">10:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="occasion">Special Occasion (Optional)</label>
+                        <select id="occasion" name="occasion">
+                            <option value="">None</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="anniversary">Anniversary</option>
+                            <option value="date">Date Night</option>
+                            <option value="business">Business Dinner</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Special Requests (Optional)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Dietary restrictions, seating preferences, etc."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">CONFIRM RESERVATION</button>
+                    
+                    <p class="form-note">* Required fields. We'll send you a confirmation email within 24 hours.</p>
+                    <p class="form-note">Note: Replace "YOUR_GOOGLE_FORM_URL_HERE" with your Google Form URL</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="cancellation-policy">
+        <div class="policy-content">
+            <h2>Reservation Policy</h2>
+            <div class="policy-grid">
+                <div class="policy-item">
+                    <h3>⏰ Timing</h3>
+                    <p>Please arrive within 15 minutes of your reservation time. Tables will be held for 15 minutes after the reserved time.</p>
+                </div>
+                <div class="policy-item">
+                    <h3>🔄 Cancellations</h3>
+                    <p>Please notify us at least 2 hours in advance if you need to cancel or modify your reservation.</p>
+                </div>
+                <div class="policy-item">
+                    <h3>👥 Large Parties</h3>
+                    <p>For groups of 8 or more, we require a credit card to hold the reservation and a 48-hour cancellation notice.</p>
+                </div>
+                <div class="policy-item">
+                    <h3>🎂 Special Events</h3>
+                    <p>Let us know about birthdays or anniversaries! We'll do our best to make your celebration special.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-brand">BELLA CUCINA</h3>
+                <p>Authentic Italian dining in the heart of New York City since 2010.</p>
+                <div class="social-links">
+                    <a href="#">📘</a><a href="#">📷</a><a href="#">🐦</a><a href="#">✈️</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Opening Hours</h4>
+                <ul class="footer-links">
+                    <li>Mon-Thu: 5:00 PM - 10:00 PM</li>
+                    <li>Fri-Sat: 5:00 PM - 11:00 PM</li>
+                    <li>Sunday: 4:00 PM - 9:00 PM</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li>123 Italian Street</li>
+                    <li>New York, NY 10001</li>
+                    <li>(555) 123-4567</li>
+                    <li>info@bellacucina.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bella Cucina. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

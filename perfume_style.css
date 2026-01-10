@@ -1,0 +1,1338 @@
+:root {
+    --noir: #0a0a0a;
+    --gold: #c9a961;
+    --gold-light: #e4d4a8;
+    --cream: #faf8f5;
+    --rose: #d4a5a5;
+    --text-primary: #1a1a1a;
+    --text-secondary: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--text-primary);
+    background: var(--cream);
+    overflow-x: hidden;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(250, 248, 245, 0.98);
+    backdrop-filter: blur(20px);
+    z-index: 1000;
+    padding: 2rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+    transition: all 0.4s ease;
+}
+
+nav.scrolled {
+    padding: 1.2rem 8%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--noir);
+    letter-spacing: 4px;
+    position: relative;
+}
+
+.logo::after {
+    content: '◆';
+    position: absolute;
+    top: -8px;
+    right: -15px;
+    font-size: 0.5rem;
+    color: var(--gold);
+}
+
+.nav-links {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links a::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 1px;
+    background: var(--gold);
+    transition: width 0.4s ease;
+}
+
+.nav-links a:hover::before,
+.nav-links a.active::before {
+    width: 100%;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--gold);
+}
+
+/* ============================================
+   HERO SECTION (Home Page)
+   ============================================ */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--cream) 0%, #f0ece5 100%);
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(201, 169, 97, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    top: -400px;
+    right: -200px;
+    animation: float 20s ease-in-out infinite;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(212, 165, 165, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    bottom: -300px;
+    left: -150px;
+    animation: float 25s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(50px, 50px) scale(1.1); }
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 1;
+    max-width: 900px;
+    padding: 0 2rem;
+}
+
+.hero-badge {
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    color: var(--gold);
+    margin-bottom: 2rem;
+    font-weight: 600;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.2s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    color: var(--noir);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.4s forwards;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.6s forwards;
+}
+
+.hero-description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.8s forwards;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 1s forwards;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.btn-primary,
+.btn-secondary {
+    padding: 1.2rem 3rem;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-primary {
+    background: var(--noir);
+    color: white;
+    border: 2px solid var(--noir);
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--gold);
+    transition: left 0.4s ease;
+    z-index: -1;
+}
+
+.btn-primary:hover::before {
+    left: 0;
+}
+
+.btn-primary:hover {
+    border-color: var(--gold);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 40px rgba(201, 169, 97, 0.3);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--noir);
+    border: 2px solid var(--noir);
+}
+
+.btn-secondary:hover {
+    background: var(--noir);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+.section-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.section-label {
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--noir);
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* ============================================
+   FEATURED PREVIEW (Home Page)
+   ============================================ */
+.featured-preview {
+    padding: 8rem 8%;
+    background: white;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.featured-card {
+    cursor: pointer;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.featured-card.reveal {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.featured-card:hover {
+    transform: translateY(-10px);
+}
+
+.featured-image {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, var(--gold-light) 0%, var(--cream) 100%);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.bottle-illustration {
+    font-size: 5rem;
+    transition: transform 0.4s ease;
+}
+
+.featured-card:hover .bottle-illustration {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.perfume-category {
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.perfume-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: var(--noir);
+}
+
+.perfume-brief {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.perfume-price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--noir);
+}
+
+/* ============================================
+   COLLECTION PAGE
+   ============================================ */
+.collection-hero {
+    padding: 12rem 8% 6rem;
+    background: linear-gradient(135deg, var(--noir) 0%, #1a1a1a 100%);
+    text-align: center;
+    color: white;
+}
+
+.collection-hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.collection-hero-content p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.collection-section {
+    padding: 6rem 8%;
+    background: var(--cream);
+}
+
+.collection-filters {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.filter-btn {
+    padding: 0.8rem 2rem;
+    background: transparent;
+    border: 2px solid var(--noir);
+    color: var(--noir);
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Raleway', sans-serif;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--noir);
+    color: white;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.perfume-card {
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+}
+
+.perfume-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.perfume-card:hover {
+    transform: translateY(-10px);
+}
+
+.perfume-image {
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(135deg, var(--gold-light) 0%, var(--cream) 100%);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.bottle-icon {
+    font-size: 6rem;
+    transition: transform 0.4s ease;
+}
+
+.perfume-card:hover .bottle-icon {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+.perfume-details {
+    text-align: center;
+}
+
+.perfume-description {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.perfume-link {
+    display: inline-block;
+    color: var(--gold);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.perfume-link::after {
+    content: '→';
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.perfume-card:hover .perfume-link::after {
+    margin-left: 15px;
+}
+
+/* ============================================
+   PRODUCT PAGE - THE AMAZING PART!
+   ============================================ */
+.product-page {
+    min-height: 100vh;
+    padding: 10rem 8% 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+    background: var(--cream);
+}
+
+/* Left Side - Details with Slide-in Animation */
+.product-details {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--gold);
+}
+
+.product-badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: var(--gold);
+    color: white;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.product-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--noir);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.product-price {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.price-amount {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--noir);
+}
+
+.price-size {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    letter-spacing: 2px;
+}
+
+.product-description {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--text-secondary);
+    margin: 2rem 0;
+}
+
+.product-notes {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: white;
+    border: 1px solid rgba(201, 169, 97, 0.2);
+}
+
+.notes-section {
+    margin-bottom: 1.5rem;
+}
+
+.notes-section:last-child {
+    margin-bottom: 0;
+}
+
+.notes-section h3 {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.notes-section p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.product-actions {
+    display: flex;
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.btn-add-to-cart,
+.btn-wishlist {
+    padding: 1.2rem 3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-add-to-cart {
+    background: var(--noir);
+    color: white;
+    flex: 1;
+}
+
+.btn-add-to-cart:hover {
+    background: var(--gold);
+}
+
+.btn-wishlist {
+    background: white;
+    color: var(--noir);
+    border: 2px solid var(--noir);
+}
+
+.btn-wishlist:hover {
+    background: var(--noir);
+    color: white;
+}
+
+.product-features {
+    margin-top: 3rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.feature-icon {
+    color: var(--gold);
+    font-weight: 700;
+}
+
+/* Right Side - Bottle with AMAZING Animations! */
+.product-bottle {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.bottle-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Animated Background Circles */
+.bottle-bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.bottle-bg-circle.animated {
+    opacity: 1;
+}
+
+.circle-1 {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(201, 169, 97, 0.15) 0%, transparent 70%);
+    animation: rotate 30s linear infinite;
+}
+
+.circle-2 {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(212, 165, 165, 0.1) 0%, transparent 70%);
+    animation: rotate 20s linear infinite reverse;
+}
+
+.circle-3 {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(201, 169, 97, 0.2) 0%, transparent 70%);
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Main Bottle */
+.bottle-main {
+    position: relative;
+    z-index: 10;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.bottle-main.animated {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.bottle-glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(201, 169, 97, 0.3) 0%, transparent 70%);
+    filter: blur(40px);
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+.bottle-visual {
+    position: relative;
+    width: 250px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottle-cap {
+    width: 80px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0 5px 20px rgba(201, 169, 97, 0.4);
+    animation: capShine 3s ease-in-out infinite;
+}
+
+@keyframes capShine {
+    0%, 100% { box-shadow: 0 5px 20px rgba(201, 169, 97, 0.4); }
+    50% { box-shadow: 0 10px 40px rgba(201, 169, 97, 0.7); }
+}
+
+.bottle-neck {
+    width: 60px;
+    height: 80px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(201, 169, 97, 0.3) 100%);
+    border: 2px solid var(--gold);
+}
+
+.bottle-body {
+    width: 250px;
+    height: 310px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(212, 165, 165, 0.2) 100%);
+    border: 3px solid var(--gold);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.bottle-liquid {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(180deg, rgba(212, 165, 165, 0.6) 0%, rgba(201, 169, 97, 0.8) 100%);
+    animation: liquidWave 4s ease-in-out infinite;
+}
+
+@keyframes liquidWave {
+    0%, 100% { height: 70%; }
+    50% { height: 75%; }
+}
+
+.bottle-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.label-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--noir);
+    letter-spacing: 2px;
+}
+
+.label-subtext {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    color: var(--gold);
+    font-weight: 600;
+}
+
+/* Floating Particles */
+.particle {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0;
+    animation: floatParticle 6s ease-in-out infinite;
+}
+
+.particle-1 {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.particle-2 {
+    top: 30%;
+    right: 15%;
+    animation-delay: 1s;
+}
+
+.particle-3 {
+    bottom: 30%;
+    left: 15%;
+    animation-delay: 2s;
+}
+
+.particle-4 {
+    bottom: 15%;
+    right: 20%;
+    animation-delay: 3s;
+}
+
+.particle-5 {
+    top: 50%;
+    left: 10%;
+    animation-delay: 4s;
+}
+
+@keyframes floatParticle {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(0) scale(1);
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-30px) scale(1.2);
+    }
+}
+
+/* ============================================
+   RECOMMENDATIONS
+   ============================================ */
+.recommendations {
+    padding: 6rem 8%;
+    background: white;
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.recommendation-card {
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-10px);
+}
+
+.rec-image {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(135deg, var(--gold-light) 0%, var(--cream) 100%);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rec-image .bottle-icon {
+    font-size: 4rem;
+}
+
+.recommendation-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--noir);
+}
+
+.rec-price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gold);
+}
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+.about {
+    padding: 10rem 8%;
+    background: var(--noir);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.about-content {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease;
+}
+
+.about-content.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.about-content .section-label {
+    color: var(--gold);
+}
+
+.about-content .section-title {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.about-content p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.about-image {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(135deg, var(--gold) 0%, var(--rose) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: white;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease 0.2s;
+}
+
+.about-image.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+.contact {
+    padding: 10rem 8%;
+    background: var(--cream);
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background: white;
+    padding: 4rem;
+    border: 1px solid rgba(201, 169, 97, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: var(--noir);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 1.2rem;
+    background: var(--cream);
+    border: 1px solid rgba(201, 169, 97, 0.3);
+    color: var(--noir);
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    background: white;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-note {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+    background: var(--noir);
+    color: white;
+    padding: 5rem 8% 3rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+    letter-spacing: 4px;
+}
+
+.footer-description {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.footer-section h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--gold);
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(201, 169, 97, 0.2);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.social-links a {
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* ============================================
+   REVEAL ANIMATION
+   ============================================ */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 1200px) {
+    .collection-grid,
+    .featured-grid,
+    .recommendations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-page {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 968px) {
+    nav {
+        padding: 1.5rem 5%;
+    }
+
+    .nav-links {
+        gap: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .collection-grid,
+    .featured-grid,
+    .recommendations-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about,
+    .product-page {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .product-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    nav {
+        padding: 1rem 5%;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .contact-form {
+        padding: 2rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .product-title {
+        font-size: 2.5rem;
+    }
+
+    .price-amount {
+        font-size: 2rem;
+    }
+
+    .product-actions {
+        flex-direction: column;
+    }
+
+    .bottle-visual {
+        transform: scale(0.8);
+    }
+
+    .collection-filters {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}

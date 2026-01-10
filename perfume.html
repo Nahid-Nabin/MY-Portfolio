@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIR ESSENCE - Luxury Perfume Boutique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="perfume_style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">NOIR ESSENCE</div>
+        <ul class="nav-links">
+            <li><a href="perfume.html">HOME</a></li>
+            <li><a href="collection.html">COLLECTION</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">SINCE 2015 • HANDCRAFTED LUXURY</div>
+            <h1>NOIR ESSENCE</h1>
+            <p class="hero-subtitle">L'ART DE LA PARFUMERIE</p>
+            <p class="hero-description">
+                Experience the epitome of luxury fragrance. Each scent is meticulously crafted 
+                using the finest ingredients from around the world, creating an unforgettable olfactory journey.
+            </p>
+            <div class="hero-cta">
+                <a href="collection.html" class="btn-primary">EXPLORE COLLECTION</a>
+                <a href="#contact" class="btn-secondary">BOOK CONSULTATION</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collection Preview -->
+    <section class="featured-preview">
+        <div class="section-header">
+            <div class="section-label">FEATURED</div>
+            <h2 class="section-title">Signature Fragrances</h2>
+            <p class="section-description">
+                Discover our most beloved scents, each crafted to perfection
+            </p>
+        </div>
+
+        <div class="featured-grid">
+            <div class="featured-card reveal" onclick="window.location.href='product.html?id=rose-eternelle'">
+                <div class="featured-image">
+                    <div class="bottle-illustration">🌹</div>
+                </div>
+                <div class="featured-details">
+                    <div class="perfume-category">FLORAL • FEMININE</div>
+                    <h3 class="perfume-name">Rose Éternelle</h3>
+                    <p class="perfume-brief">Bulgarian rose, jasmine, sandalwood</p>
+                    <div class="perfume-price">$285</div>
+                </div>
+            </div>
+
+            <div class="featured-card reveal" onclick="window.location.href='product.html?id=oud-mystique'">
+                <div class="featured-image">
+                    <div class="bottle-illustration">🪵</div>
+                </div>
+                <div class="featured-details">
+                    <div class="perfume-category">WOODY • MASCULINE</div>
+                    <h3 class="perfume-name">Oud Mystique</h3>
+                    <p class="perfume-brief">Rich oud, leather, amber, spice</p>
+                    <div class="perfume-price">$320</div>
+                </div>
+            </div>
+
+            <div class="featured-card reveal" onclick="window.location.href='product.html?id=lumiere-dete'">
+                <div class="featured-image">
+                    <div class="bottle-illustration">☀️</div>
+                </div>
+                <div class="featured-details">
+                    <div class="perfume-category">CITRUS • UNISEX</div>
+                    <h3 class="perfume-name">Lumière d'Été</h3>
+                    <p class="perfume-brief">Bergamot, neroli, white tea, musk</p>
+                    <div class="perfume-price">$265</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem;">
+            <a href="collection.html" class="btn-primary">VIEW ALL FRAGRANCES</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content reveal">
+            <div class="section-label">OUR LEGACY</div>
+            <h2 class="section-title">The Art of Perfumery</h2>
+            <p>
+                Since 2015, Noir Essence has been at the forefront of luxury fragrance creation. 
+                Our master perfumers blend traditional craftsmanship with modern innovation, 
+                sourcing the rarest ingredients from every corner of the globe.
+            </p>
+            <p>
+                Each fragrance is a work of art, meticulously composed to evoke emotions, 
+                memories, and desires. We believe that perfume is not just a scent—it's an 
+                extension of your personality, a statement of who you are.
+            </p>
+
+            <div class="about-stats">
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">UNIQUE SCENTS</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">HANDCRAFTED</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">COUNTRIES</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-image reveal">
+            Artisan Craft
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <div class="section-label">GET IN TOUCH</div>
+            <h2 class="section-title">Book a Consultation</h2>
+            <p class="section-description">
+                Experience our fragrances in person. Book a private consultation 
+                with our fragrance experts to find your perfect scent.
+            </p>
+        </div>
+
+        <div class="contact-container">
+            <form class="contact-form" action="YOUR_GOOGLE_FORM_URL_HERE" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">EMAIL ADDRESS</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">INTERESTED IN</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Select an option</option>
+                        <option value="private-consultation">Private Consultation</option>
+                        <option value="gift-service">Gift Service</option>
+                        <option value="custom-fragrance">Custom Fragrance Creation</option>
+                        <option value="corporate-gift">Corporate Gifting</option>
+                        <option value="general-inquiry">General Inquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your fragrance preferences..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">SEND MESSAGE</button>
+                
+                <p class="form-note">
+                    * Replace "YOUR_GOOGLE_FORM_URL_HERE" with your actual Google Form URL
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-brand">NOIR ESSENCE</div>
+                <p class="footer-description">
+                    Luxury perfume boutique offering exquisite, handcrafted fragrances 
+                    created by master perfumers using the world's finest ingredients.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="collection.html">All Fragrances</a></li>
+                    <li><a href="collection.html">Men's Collection</a></li>
+                    <li><a href="collection.html">Women's Collection</a></li>
+                    <li><a href="collection.html">Unisex</a></li>
+                    <li><a href="collection.html">Gift Sets</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#contact">Private Consultation</a></li>
+                    <li><a href="#contact">Custom Fragrance</a></li>
+                    <li><a href="#contact">Gift Wrapping</a></li>
+                    <li><a href="#contact">Corporate Gifts</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="#">123 Luxury Avenue</a></li>
+                    <li><a href="#">New York, NY 10022</a></li>
+                    <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+                    <li><a href="mailto:info@noiressence.com">info@noiressence.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 Noir Essence. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Pinterest">📌</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

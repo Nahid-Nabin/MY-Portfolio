@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Bella Cucina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <div class="logo">BELLA CUCINA</div>
+        <ul class="nav-links">
+            <li><a href="resturent.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="gallery.html" class="active">GALLERY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="reservations.html">RESERVATIONS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="mobile-menu-toggle">☰</div>
+    </nav>
+
+    <!-- Gallery Hero -->
+    <section class="page-hero gallery-hero">
+        <div class="page-hero-content">
+            <h1>Gallery</h1>
+            <p>A visual journey through our culinary artistry and ambiance</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Photos</button>
+            <button class="filter-btn" data-filter="food">Food</button>
+            <button class="filter-btn" data-filter="ambiance">Ambiance</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="gallery-grid">
+            <!-- Food Photos -->
+            <div class="gallery-item reveal" data-category="food">
+                <div class="gallery-image food-1">
+                    <div class="image-overlay">
+                        <h3>🍝</h3>
+                        <p>Tagliatelle al Tartufo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal" data-category="food">
+                <div class="gallery-image food-2">
+                    <div class="image-overlay">
+                        <h3>🍕</h3>
+                        <p>Wood-Fired Margherita</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal" data-category="food">
+                <div class="gallery-image food-3">
+                    <div class="image-overlay">
+                        <h3>🥩</h3>
+                        <p>Osso Buco Milanese</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal" data-category="food">
+                <div class="gallery-image food-4">
+                    <div class="image-overlay">
+                        <h3>🍰</h3>
+                        <p>Tiramisu Classico</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal" data-category="food">
+                <div class="gallery-image food-5">
+                    <div class="image-overlay">
+                        <h3>🍤</h3>
+                        <p>Linguine ai Frutti di Mare</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal" data-category="food">
+                <div class="gallery-image food-6">
+                    <div class="image-overlay">
+                        <h3>🧀</h3>
+                        <p>Burrata con Prosciutto</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ambiance Photos -->
+            <div class="gallery-item reveal" data-category="ambiance">
+                <div class="gallery-image ambiance-1">
+                    <div class="image-overlay">
+                        <h3>🕯️</h3>
+                        <p>Dining Room</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal" data-category="ambiance">
+                <div class="gallery-image ambiance-2">
+                    <div class="image-overlay">
+                        <h3>🍷</h3>
+                        <p>Wine Cellar</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal" data-category="ambiance">
+                <div class="gallery-image ambiance-3">
+                    <div class="image-overlay">
+                        <h3>🔥</h3>
+                        <p>Wood-Fire Oven</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal" data-category="ambiance">
+                <div class="gallery-image ambiance-4">
+                    <div class="image-overlay">
+                        <h3>🌿</h3>
+                        <p>Outdoor Terrace</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Photos -->
+            <div class="gallery-item reveal" data-category="events">
+                <div class="gallery-image event-1">
+                    <div class="image-overlay">
+                        <h3>🎉</h3>
+                        <p>Private Events</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal" data-category="events">
+                <div class="gallery-image event-2">
+                    <div class="image-overlay">
+                        <h3>👨‍🍳</h3>
+                        <p>Chef's Table Experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal" data-category="events">
+                <div class="gallery-image event-3">
+                    <div class="image-overlay">
+                        <h3>🍾</h3>
+                        <p>Wine Tasting Events</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal" data-category="events">
+                <div class="gallery-image event-4">
+                    <div class="image-overlay">
+                        <h3>🎊</h3>
+                        <p>Celebrations</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Food Photos -->
+            <div class="gallery-item reveal" data-category="food">
+                <div class="gallery-image food-7">
+                    <div class="image-overlay">
+                        <h3>🍷</h3>
+                        <p>Wine Pairing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item reveal" data-category="food">
+                <div class="gallery-image food-8">
+                    <div class="image-overlay">
+                        <h3>🥗</h3>
+                        <p>Fresh Antipasti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram-section">
+        <div class="instagram-content">
+            <h2>Follow Us on Instagram</h2>
+            <p>@bellacucinanyc - Share your experience with #BellaCucinaExperience</p>
+            <div class="instagram-feed">
+                <div class="instagram-photo">📸</div>
+                <div class="instagram-photo">📸</div>
+                <div class="instagram-photo">📸</div>
+                <div class="instagram-photo">📸</div>
+                <div class="instagram-photo">📸</div>
+                <div class="instagram-photo">📸</div>
+            </div>
+            <a href="#" class="btn btn-primary">FOLLOW US</a>
+        </div>
+    </section>
+
+    <!-- Gallery CTA -->
+    <section class="gallery-cta">
+        <div class="cta-content">
+            <h2>Experience It Yourself</h2>
+            <p>Come taste the dishes you see in our gallery</p>
+            <a href="reservations.html" class="btn btn-large">BOOK A TABLE</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-brand">BELLA CUCINA</h3>
+                <p>Authentic Italian dining in the heart of New York City since 2010.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="TripAdvisor">✈️</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Opening Hours</h4>
+                <ul class="footer-links">
+                    <li>Mon-Thu: 5:00 PM - 10:00 PM</li>
+                    <li>Fri-Sat: 5:00 PM - 11:00 PM</li>
+                    <li>Sunday: 4:00 PM - 9:00 PM</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li>123 Italian Street</li>
+                    <li>New York, NY 10001</li>
+                    <li>(555) 123-4567</li>
+                    <li>info@bellacucina.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bella Cucina. All rights reserved. | Designed with passion</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Bella Cucina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <div class="logo">BELLA CUCINA</div>
+        <ul class="nav-links">
+            <li><a href="resturent.html">HOME</a></li>
+            <li><a href="menu.html" class="active">MENU</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="reservations.html">RESERVATIONS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="mobile-menu-toggle">☰</div>
+    </nav>
+
+    <!-- Menu Hero -->
+    <section class="page-hero menu-hero">
+        <div class="page-hero-content">
+            <h1>Our Menu</h1>
+            <p>Authentic Italian cuisine made with passion and the finest ingredients</p>
+        </div>
+    </section>
+
+    <!-- Menu Navigation -->
+    <section class="menu-nav">
+        <div class="menu-nav-container">
+            <button class="menu-nav-btn active" data-category="all">All Dishes</button>
+            <button class="menu-nav-btn" data-category="antipasti">Antipasti</button>
+            <button class="menu-nav-btn" data-category="pasta">Pasta</button>
+            <button class="menu-nav-btn" data-category="secondi">Secondi</button>
+            <button class="menu-nav-btn" data-category="pizza">Pizza</button>
+            <button class="menu-nav-btn" data-category="desserts">Dolci</button>
+            <button class="menu-nav-btn" data-category="beverages">Beverages</button>
+        </div>
+    </section>
+
+    <!-- Menu Content -->
+    <section class="menu-content">
+        <!-- ANTIPASTI (Appetizers) -->
+        <div class="menu-category" data-category="antipasti">
+            <div class="category-header">
+                <h2>Antipasti</h2>
+                <p class="category-description">Start your meal with traditional Italian starters</p>
+            </div>
+
+            <div class="menu-items">
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Bruschetta al Pomodoro</h3>
+                            <p>Toasted bread with fresh tomatoes, basil, garlic, and extra virgin olive oil</p>
+                        </div>
+                        <div class="item-price">€12</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Carpaccio di Manzo</h3>
+                            <p>Thinly sliced raw beef with arugula, Parmigiano-Reggiano, and lemon</p>
+                        </div>
+                        <div class="item-price">€18</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Burrata con Prosciutto</h3>
+                            <p>Creamy burrata cheese with Parma ham, cherry tomatoes, and basil</p>
+                        </div>
+                        <div class="item-price">€16</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Calamari Fritti</h3>
+                            <p>Crispy fried squid served with lemon aioli and marinara sauce</p>
+                        </div>
+                        <div class="item-price">€15</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Antipasto Misto</h3>
+                            <p>Selection of Italian cured meats, cheeses, olives, and marinated vegetables</p>
+                        </div>
+                        <div class="item-price">€22</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PASTA -->
+        <div class="menu-category" data-category="pasta">
+            <div class="category-header">
+                <h2>Pasta</h2>
+                <p class="category-description">Handmade fresh pasta daily by our chef</p>
+            </div>
+
+            <div class="menu-items">
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Spaghetti Carbonara</h3>
+                            <p>Traditional Roman pasta with guanciale, eggs, Pecorino Romano, and black pepper</p>
+                        </div>
+                        <div class="item-price">€24</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Tagliatelle al Tartufo <span class="chef-special">★ Chef's Special</span></h3>
+                            <p>Fresh egg pasta with black truffle cream sauce and shaved Parmigiano</p>
+                        </div>
+                        <div class="item-price">€28</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Penne all'Arrabbiata</h3>
+                            <p>Penne pasta in spicy tomato sauce with garlic and parsley</p>
+                        </div>
+                        <div class="item-price">€20</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Lasagne alla Bolognese</h3>
+                            <p>Layers of pasta with beef ragù, béchamel sauce, and Parmigiano</p>
+                        </div>
+                        <div class="item-price">€25</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Ravioli di Ricotta e Spinaci</h3>
+                            <p>Handmade ravioli filled with ricotta and spinach in butter sage sauce</p>
+                        </div>
+                        <div class="item-price">€23</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Linguine ai Frutti di Mare</h3>
+                            <p>Linguine with mixed seafood in white wine and cherry tomato sauce</p>
+                        </div>
+                        <div class="item-price">€29</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECONDI (Main Courses) -->
+        <div class="menu-category" data-category="secondi">
+            <div class="category-header">
+                <h2>Secondi Piatti</h2>
+                <p class="category-description">Main courses prepared with authentic Italian techniques</p>
+            </div>
+
+            <div class="menu-items">
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Osso Buco Milanese <span class="chef-special">★ Chef's Special</span></h3>
+                            <p>Braised veal shanks with gremolata, served with saffron risotto</p>
+                        </div>
+                        <div class="item-price">€38</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Bistecca alla Fiorentina</h3>
+                            <p>Grilled T-bone steak (for two) with roasted potatoes and arugula salad</p>
+                        </div>
+                        <div class="item-price">€65</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Pollo alla Parmigiana</h3>
+                            <p>Breaded chicken breast with tomato sauce, mozzarella, and Parmigiano</p>
+                        </div>
+                        <div class="item-price">€26</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Branzino al Forno</h3>
+                            <p>Oven-baked Mediterranean sea bass with herbs, lemon, and roasted vegetables</p>
+                        </div>
+                        <div class="item-price">€34</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Saltimbocca alla Romana</h3>
+                            <p>Veal cutlets with prosciutto and sage in white wine sauce</p>
+                        </div>
+                        <div class="item-price">€32</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PIZZA -->
+        <div class="menu-category" data-category="pizza">
+            <div class="category-header">
+                <h2>Pizza Napoletana</h2>
+                <p class="category-description">Wood-fired pizzas made with authentic Neapolitan techniques</p>
+            </div>
+
+            <div class="menu-items">
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Margherita DOC</h3>
+                            <p>San Marzano tomatoes, buffalo mozzarella, fresh basil, extra virgin olive oil</p>
+                        </div>
+                        <div class="item-price">€22</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Quattro Formaggi</h3>
+                            <p>Four cheese pizza: mozzarella, gorgonzola, fontina, and Parmigiano</p>
+                        </div>
+                        <div class="item-price">€25</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Diavola</h3>
+                            <p>Tomato sauce, mozzarella, spicy salami, chili flakes</p>
+                        </div>
+                        <div class="item-price">€24</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Prosciutto e Funghi</h3>
+                            <p>Tomato sauce, mozzarella, Parma ham, mushrooms</p>
+                        </div>
+                        <div class="item-price">€26</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Tartufo Bianco <span class="chef-special">★ Chef's Special</span></h3>
+                            <p>White base, mozzarella, fresh white truffle, arugula, Parmigiano</p>
+                        </div>
+                        <div class="item-price">€32</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <div class="menu-category" data-category="desserts">
+            <div class="category-header">
+                <h2>Dolci</h2>
+                <p class="category-description">Sweet endings to your Italian feast</p>
+            </div>
+
+            <div class="menu-items">
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Tiramisu Classico</h3>
+                            <p>Traditional Italian dessert with espresso-soaked ladyfingers and mascarpone</p>
+                        </div>
+                        <div class="item-price">€12</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Panna Cotta</h3>
+                            <p>Vanilla cream custard with berry compote</p>
+                        </div>
+                        <div class="item-price">€10</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Cannoli Siciliani</h3>
+                            <p>Crispy pastry shells filled with sweet ricotta and chocolate chips</p>
+                        </div>
+                        <div class="item-price">€11</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Gelato Artigianale</h3>
+                            <p>Homemade Italian ice cream (ask for daily flavors)</p>
+                        </div>
+                        <div class="item-price">€9</div>
+                    </div>
+                </div>
+
+                <div class="menu-item reveal">
+                    <div class="menu-item-header">
+                        <div class="item-name-desc">
+                            <h3>Torta al Cioccolato</h3>
+                            <p>Rich chocolate cake with vanilla gelato</p>
+                        </div>
+                        <div class="item-price">€13</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BEVERAGES -->
+        <div class="menu-category" data-category="beverages">
+            <div class="category-header">
+                <h2>Beverages</h2>
+                <p class="category-description">Wines, cocktails, and Italian classics</p>
+            </div>
+
+            <!-- Wine Section -->
+            <div class="beverage-section">
+                <h3 class="beverage-subtitle">Italian Wines</h3>
+                <div class="menu-items">
+                    <div class="menu-item reveal">
+                        <div class="menu-item-header">
+                            <div class="item-name-desc">
+                                <h3>Chianti Classico DOCG</h3>
+                                <p>Tuscany red wine, full-bodied with cherry notes</p>
+                            </div>
+                            <div class="item-price">€45</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item reveal">
+                        <div class="menu-item-header">
+                            <div class="item-name-desc">
+                                <h3>Barolo DOCG</h3>
+                                <p>Piedmont red wine, aged 3 years, complex and elegant</p>
+                            </div>
+                            <div class="item-price">€75</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item reveal">
+                        <div class="menu-item-header">
+                            <div class="item-name-desc">
+                                <h3>Pinot Grigio DOC</h3>
+                                <p>Crisp white wine from Veneto region</p>
+                            </div>
+                            <div class="item-price">€38</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item reveal">
+                        <div class="menu-item-header">
+                            <div class="item-name-desc">
+                                <h3>Prosecco DOC</h3>
+                                <p>Sparkling wine from Veneto</p>
+                            </div>
+                            <div class="item-price">€35</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cocktails Section -->
+            <div class="beverage-section">
+                <h3 class="beverage-subtitle">Italian Cocktails</h3>
+                <div class="menu-items">
+                    <div class="menu-item reveal">
+                        <div class="menu-item-header">
+                            <div class="item-name-desc">
+                                <h3>Aperol Spritz</h3>
+                                <p>Aperol, Prosecco, soda water, orange slice</p>
+                            </div>
+                            <div class="item-price">€12</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item reveal">
+                        <div class="menu-item-header">
+                            <div class="item-name-desc">
+                                <h3>Negroni</h3>
+                                <p>Gin, Campari, sweet vermouth</p>
+                            </div>
+                            <div class="item-price">€14</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item reveal">
+                        <div class="menu-item-header">
+                            <div class="item-name-desc">
+                                <h3>Limoncello Martini</h3>
+                                <p>Vodka, Limoncello, lemon juice, sugar rim</p>
+                            </div>
+                            <div class="item-price">€13</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Non-Alcoholic Section -->
+            <div class="beverage-section">
+                <h3 class="beverage-subtitle">Coffee & Non-Alcoholic</h3>
+                <div class="menu-items">
+                    <div class="menu-item reveal">
+                        <div class="menu-item-header">
+                            <div class="item-name-desc">
+                                <h3>Espresso</h3>
+                                <p>Classic Italian coffee</p>
+                            </div>
+                            <div class="item-price">€4</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item reveal">
+                        <div class="menu-item-header">
+                            <div class="item-name-desc">
+                                <h3>Cappuccino</h3>
+                                <p>Espresso with steamed milk foam</p>
+                            </div>
+                            <div class="item-price">€5</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item reveal">
+                        <div class="menu-item-header">
+                            <div class="item-name-desc">
+                                <h3>San Pellegrino</h3>
+                                <p>Sparkling mineral water (500ml)</p>
+                            </div>
+                            <div class="item-price">€6</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item reveal">
+                        <div class="menu-item-header">
+                            <div class="item-name-desc">
+                                <h3>Fresh Lemonade</h3>
+                                <p>Homemade with Italian lemons</p>
+                            </div>
+                            <div class="item-price">€5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu CTA -->
+    <section class="menu-cta">
+        <div class="menu-cta-content">
+            <h2>Ready to Taste Italy?</h2>
+            <p>Reserve your table and experience authentic Italian cuisine</p>
+            <a href="reservations.html" class="btn btn-large">MAKE A RESERVATION</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-brand">BELLA CUCINA</h3>
+                <p>Authentic Italian dining in the heart of New York City since 2010.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="TripAdvisor">✈️</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Opening Hours</h4>
+                <ul class="footer-links">
+                    <li>Mon-Thu: 5:00 PM - 10:00 PM</li>
+                    <li>Fri-Sat: 5:00 PM - 11:00 PM</li>
+                    <li>Sunday: 4:00 PM - 9:00 PM</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li>123 Italian Street</li>
+                    <li>New York, NY 10001</li>
+                    <li>(555) 123-4567</li>
+                    <li>info@bellacucina.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bella Cucina. All rights reserved. | Designed with passion</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
