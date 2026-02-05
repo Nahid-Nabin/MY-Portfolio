@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRONPEAK - Premium Gym Equipment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gymstyle.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-icon">💪</div>
+            <div class="loader-text">IRONPEAK</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-icon">💪</span>
+                <span class="brand-text">IRONPEAK</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="quote-btn">Get Quote</button>
+            </div>
+            <button class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-video">
+            <div class="video-overlay"></div>
+            <div class="video-bg"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tag">Professional Grade Equipment</span>
+                <h1 class="hero-title">
+                    BUILD YOUR<br>
+                    <span class="highlight">DREAM GYM</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Premium quality fitness equipment for commercial gyms, home studios, and athletes. 
+                    Transform your space with industry-leading gear built to last.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Products</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-target="10000">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Shop Now</a>
+                    <button class="btn btn-outline quote-btn">Request Quote</button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section categories-section" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Shop by Category</span>
+                <h2 class="section-title">Equipment Categories</h2>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-category="strength">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&h=400&fit=crop" alt="Strength">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Strength Training</h3>
+                        <p>Barbells, Dumbbells, Power Racks</p>
+                        <button class="category-btn">Explore →</button>
+                    </div>
+                </div>
+                <div class="category-card" data-category="cardio">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=500&h=400&fit=crop" alt="Cardio">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Cardio Machines</h3>
+                        <p>Treadmills, Bikes, Rowers</p>
+                        <button class="category-btn">Explore →</button>
+                    </div>
+                </div>
+                <div class="category-card" data-category="functional">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=500&h=400&fit=crop" alt="Functional">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Functional Training</h3>
+                        <p>Kettlebells, Battle Ropes, Plyo Boxes</p>
+                        <button class="category-btn">Explore →</button>
+                    </div>
+                </div>
+                <div class="category-card" data-category="accessories">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&h=400&fit=crop" alt="Accessories">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Accessories</h3>
+                        <p>Mats, Bands, Foam Rollers</p>
+                        <button class="category-btn">Explore →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Best Sellers</span>
+                <h2 class="section-title">Featured Products</h2>
+            </div>
+            
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All</button>
+                <button class="filter-tab" data-filter="strength">Strength</button>
+                <button class="filter-tab" data-filter="cardio">Cardio</button>
+                <button class="filter-tab" data-filter="functional">Functional</button>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-category="strength">
+                    <div class="product-badge">NEW</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=500&h=500&fit=crop" alt="Power Rack">
+                        <div class="product-actions">
+                            <button class="quick-view" data-product="1">Quick View</button>
+                            <button class="add-to-cart" data-product="1">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Strength Training</div>
+                        <h3 class="product-name">Commercial Power Rack</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(128)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$2,499</span>
+                            <span class="price-old">$2,999</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cardio">
+                    <div class="product-badge hot">HOT</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?w=500&h=500&fit=crop" alt="Treadmill">
+                        <div class="product-actions">
+                            <button class="quick-view" data-product="2">Quick View</button>
+                            <button class="add-to-cart" data-product="2">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Cardio</div>
+                        <h3 class="product-name">Professional Treadmill</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(256)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$3,299</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="strength">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=500&h=500&fit=crop" alt="Dumbbells">
+                        <div class="product-actions">
+                            <button class="quick-view" data-product="3">Quick View</button>
+                            <button class="add-to-cart" data-product="3">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Strength Training</div>
+                        <h3 class="product-name">Rubber Hex Dumbbell Set</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(342)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$899</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="functional">
+                    <div class="product-badge">SALE</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&h=500&fit=crop" alt="Kettlebells">
+                        <div class="product-actions">
+                            <button class="quick-view" data-product="4">Quick View</button>
+                            <button class="add-to-cart" data-product="4">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Functional</div>
+                        <h3 class="product-name">Competition Kettlebell Set</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(89)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$449</span>
+                            <span class="price-old">$599</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cardio">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500&h=500&fit=crop" alt="Bike">
+                        <div class="product-actions">
+                            <button class="quick-view" data-product="5">Quick View</button>
+                            <button class="add-to-cart" data-product="5">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Cardio</div>
+                        <h3 class="product-name">Assault Air Bike</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(167)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$1,299</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="strength">
+                    <div class="product-badge">NEW</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=500&h=500&fit=crop" alt="Barbell">
+                        <div class="product-actions">
+                            <button class="quick-view" data-product="6">Quick View</button>
+                            <button class="add-to-cart" data-product="6">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Strength Training</div>
+                        <h3 class="product-name">Olympic Barbell 20kg</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="reviews">(421)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">$349</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-cta">
+                <button class="btn btn-primary">View All Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section features-section" id="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Free Shipping</h3>
+                    <p>Free delivery on orders over $500. Fast and reliable shipping nationwide.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Lifetime Warranty</h3>
+                    <p>Industry-leading warranty on all commercial equipment. Built to last.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💯</div>
+                    <h3>Quality Guaranteed</h3>
+                    <p>Premium materials and construction. Each product rigorously tested.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Expert Support</h3>
+                    <p>Dedicated team available 24/7 to help with selection and setup.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase -->
+    <section class="section video-section">
+        <div class="container">
+            <div class="video-showcase">
+                <div class="video-content">
+                    <span class="section-tag">See Our Equipment in Action</span>
+                    <h2 class="section-title">Built for Performance</h2>
+                    <p>Watch how IRONPEAK equipment transforms gyms and training spaces worldwide. Our commercial-grade gear is trusted by professional athletes, fitness centers, and home gym enthusiasts.</p>
+                    <ul class="video-features">
+                        <li>Commercial-grade construction</li>
+                        <li>Tested by professional athletes</li>
+                        <li>Easy assembly and installation</li>
+                        <li>Customizable configurations</li>
+                    </ul>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+                <div class="video-player">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop" alt="Gym">
+                    <button class="play-button">▶</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Customer Reviews</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Best investment for our gym. The quality is exceptional and the equipment has held up perfectly even with heavy daily use. Customer service was outstanding throughout the entire process."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=100&h=100&fit=crop" alt="Client">
+                        <div class="author-info">
+                            <h4>Mike Johnson</h4>
+                            <p>Owner, PowerHouse Gym</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Transformed my home gym completely. The delivery was fast, assembly was straightforward, and the quality exceeded my expectations. Worth every penny!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Client">
+                        <div class="author-info">
+                            <h4>Sarah Williams</h4>
+                            <p>Fitness Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Professional grade equipment at competitive prices. We've equipped three locations with IRONPEAK and couldn't be happier with the durability and performance."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" alt="Client">
+                        <div class="author-info">
+                            <h4>David Chen</h4>
+                            <p>CEO, FitChain Studios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="testimonial-prev">←</button>
+                <div class="testimonial-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="testimonial-next">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="section contact-cta" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build Your Dream Gym?</h2>
+                <p>Get a custom quote for your space. Our experts will help you choose the perfect equipment.</p>
+                <button class="btn btn-primary quote-btn">Request Free Quote</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Modal -->
+    <div class="modal" id="quoteModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="modal-title">Request a Quote</h2>
+            <p class="modal-subtitle">Fill out the form and our team will contact you within 24 hours</p>
+            
+            <form id="quoteForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" placeholder="First Name *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Last Name *" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number *" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Project Type *</option>
+                        <option value="commercial">Commercial Gym</option>
+                        <option value="home">Home Gym</option>
+                        <option value="studio">Training Studio</option>
+                        <option value="school">School/University</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Budget Range *</option>
+                        <option value="5-10k">$5,000 - $10,000</option>
+                        <option value="10-25k">$10,000 - $25,000</option>
+                        <option value="25-50k">$25,000 - $50,000</option>
+                        <option value="50k+">$50,000+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tell us about your project... *" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content modal-large">
+            <button class="modal-close">&times;</button>
+            <div class="product-detail">
+                <div class="product-detail-images">
+                    <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=600&h=600&fit=crop" alt="Product" id="productImage">
+                </div>
+                <div class="product-detail-info">
+                    <div class="product-category" id="modalCategory">Strength Training</div>
+                    <h2 id="modalName">Commercial Power Rack</h2>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="reviews" id="modalReviews">(128 reviews)</span>
+                    </div>
+                    <div class="product-price-large">
+                        <span class="price-current" id="modalPrice">$2,499</span>
+                        <span class="price-old" id="modalOldPrice">$2,999</span>
+                    </div>
+                    <p class="product-description" id="modalDescription">
+                        Professional-grade power rack built for commercial gym use. Features heavy-duty steel construction, 
+                        adjustable J-hooks, safety spotter arms, and multiple pull-up bar grips. Designed for durability 
+                        and maximum performance.
+                    </p>
+                    <ul class="product-specs">
+                        <li><strong>Dimensions:</strong> 48" W x 48" D x 90" H</li>
+                        <li><strong>Weight Capacity:</strong> 1,000 lbs</li>
+                        <li><strong>Material:</strong> 11-gauge steel</li>
+                        <li><strong>Warranty:</strong> Lifetime on frame</li>
+                    </ul>
+                    <div class="product-actions-modal">
+                        <button class="btn btn-primary add-to-cart-modal">Add to Cart</button>
+                        <button class="btn btn-outline quote-btn">Request Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="cart-close">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty">
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-full">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>
+                        <span class="brand-icon">💪</span>
+                        IRONPEAK
+                    </h3>
+                    <p>Premium gym equipment for professionals and enthusiasts. Building stronger gyms since 2009.</p>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#products">Strength Equipment</a></li>
+                        <li><a href="#products">Cardio Machines</a></li>
+                        <li><a href="#products">Functional Training</a></li>
+                        <li><a href="#products">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📍 1234 Fitness Ave, LA, CA 90001</li>
+                        <li>📞 (555) GYM-PEAK</li>
+                        <li>✉️ info@ironpeak.com</li>
+                        <li>🕐 Mon-Fri: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IRONPEAK. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-top">
+        <svg viewBox="0 0 24 24">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </div>
+
+    <script src="gymscript.js"></script>
+</body>
+</html>
