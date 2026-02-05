@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE INTERIORS - Premium Interior Design Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="intostyle.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">LUXE</div>
+            <div class="loader-text">Crafting Spaces</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">LUXE INTERIORS</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-cta consult-btn">Free Consultation</button>
+            <button class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&h=1080&fit=crop');">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-tag">Timeless Elegance</span>
+                        <h1 class="hero-title">Transform Your<br>Living Spaces</h1>
+                        <p class="hero-subtitle">Where luxury meets functionality. We create bespoke interiors that reflect your unique style and elevate your lifestyle.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary consult-btn">Start Your Project</button>
+                            <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&h=1080&fit=crop');">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-tag">Modern Sophistication</span>
+                        <h1 class="hero-title">Design That<br>Inspires Living</h1>
+                        <p class="hero-subtitle">Award-winning interior design services tailored to create stunning, functional spaces that tell your story.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary consult-btn">Get Started</button>
+                            <a href="#portfolio" class="btn btn-outline">Our Work</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop');">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-tag">Curated Excellence</span>
+                        <h1 class="hero-title">Spaces That<br>Define You</h1>
+                        <p class="hero-subtitle">From concept to completion, we bring your vision to life with meticulous attention to detail and unparalleled craftsmanship.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary consult-btn">Book Consultation</button>
+                            <a href="#services" class="btn btn-outline">Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-nav">
+            <button class="hero-prev">❮</button>
+            <button class="hero-next">❯</button>
+        </div>
+        <div class="hero-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Design Awards</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">% Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">Who We Are</span>
+                    <h2 class="section-title">Crafting Dream<br>Spaces Since 1999</h2>
+                    <p class="about-text">LUXE Interiors is a premier interior design studio specializing in creating timeless, sophisticated spaces that seamlessly blend aesthetics with functionality. Our team of award-winning designers brings over 25 years of expertise to every project.</p>
+                    <p class="about-text">We believe that exceptional design should be accessible, sustainable, and deeply personal. From luxury residences to commercial spaces, we transform visions into reality with meticulous attention to detail and unwavering commitment to excellence.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Personalized Approach</h4>
+                                <p>Every space tells a unique story</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Sustainable Design</h4>
+                                <p>Eco-conscious materials & practices</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Turnkey Solutions</h4>
+                                <p>From concept to final installation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Work With Us</a>
+                </div>
+                <div class="about-images">
+                    <div class="about-img-main">
+                        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&h=700&fit=crop" alt="Interior Design">
+                    </div>
+                    <div class="about-img-small">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=300&h=300&fit=crop" alt="Design Detail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive interior design solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=500&h=400&fit=crop" alt="Residential Design">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🏠</div>
+                        <h3>Residential Design</h3>
+                        <p>Transform your home into a luxurious sanctuary with our bespoke residential design services. From single rooms to entire estates.</p>
+                        <ul class="service-list">
+                            <li>Complete home makeovers</li>
+                            <li>Kitchen & bathroom design</li>
+                            <li>Custom furniture selection</li>
+                            <li>Lighting & accessories</li>
+                        </ul>
+                        <button class="service-btn consult-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&h=400&fit=crop" alt="Commercial Design">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">🏢</div>
+                        <h3>Commercial Spaces</h3>
+                        <p>Create inspiring workspaces that boost productivity and reflect your brand identity with our commercial design expertise.</p>
+                        <ul class="service-list">
+                            <li>Office interior design</li>
+                            <li>Retail space planning</li>
+                            <li>Hospitality design</li>
+                            <li>Brand integration</li>
+                        </ul>
+                        <button class="service-btn consult-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=400&fit=crop" alt="Space Planning">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">📐</div>
+                        <h3>Space Planning</h3>
+                        <p>Maximize functionality and flow with expert space planning that optimizes every square foot of your property.</p>
+                        <ul class="service-list">
+                            <li>3D visualization</li>
+                            <li>Furniture layout</li>
+                            <li>Traffic flow analysis</li>
+                            <li>Storage solutions</li>
+                        </ul>
+                        <button class="service-btn consult-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=500&h=400&fit=crop" alt="Luxury Design">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">💎</div>
+                        <h3>Luxury Design</h3>
+                        <p>Experience the pinnacle of interior design with our exclusive luxury service featuring the finest materials and craftsmanship.</p>
+                        <ul class="service-list">
+                            <li>Bespoke furniture design</li>
+                            <li>Art curation & placement</li>
+                            <li>Premium material sourcing</li>
+                            <li>White-glove service</li>
+                        </ul>
+                        <button class="service-btn consult-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Explore our portfolio of stunning interior transformations</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&h=600&fit=crop" alt="Modern Living Room">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Modern Penthouse</h3>
+                            <p>Residential · New York</p>
+                            <button class="view-btn" data-project="1">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&h=600&fit=crop" alt="Office Design">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Tech Startup Office</h3>
+                            <p>Commercial · San Francisco</p>
+                            <button class="view-btn" data-project="2">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="luxury">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=600&fit=crop" alt="Luxury Bedroom">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Beverly Hills Estate</h3>
+                            <p>Luxury · Los Angeles</p>
+                            <button class="view-btn" data-project="3">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="residential">
+                    <img src="https://images.unsplash.com/photo-1600566753151-384129cf4e3e?w=600&h=600&fit=crop" alt="Kitchen Design">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Scandinavian Kitchen</h3>
+                            <p>Residential · Seattle</p>
+                            <button class="view-btn" data-project="4">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="commercial">
+                    <img src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=600&h=600&fit=crop" alt="Restaurant Design">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Fine Dining Restaurant</h3>
+                            <p>Commercial · Miami</p>
+                            <button class="view-btn" data-project="5">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="luxury">
+                    <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=600&h=600&fit=crop" alt="Bathroom Design">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Spa Bathroom Retreat</h3>
+                            <p>Luxury · Malibu</p>
+                            <button class="view-btn" data-project="6">View Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section process-section" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How We Work</span>
+                <h2 class="section-title">Our Design Process</h2>
+                <p class="section-subtitle">A seamless journey from vision to reality</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Discovery & Consultation</h3>
+                        <p>We begin with an in-depth consultation to understand your vision, lifestyle, and design preferences. This initial meeting sets the foundation for your dream space.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Concept Development</h3>
+                        <p>Our designers create mood boards, color palettes, and preliminary sketches that bring your vision to life. We present multiple concepts tailored to your style.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Design & Planning</h3>
+                        <p>Detailed 3D renderings, floor plans, and material selections are developed. We refine every detail until the design perfectly matches your expectations.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Implementation</h3>
+                        <p>Our project management team coordinates all aspects of construction, procurement, and installation. We ensure everything is executed flawlessly and on schedule.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Final Reveal</h3>
+                        <p>Experience the transformation as we unveil your beautifully designed space. We conduct a thorough walkthrough and ensure every detail exceeds expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Client Stories</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-text">"LUXE Interiors transformed our dated apartment into a stunning modern sanctuary. Their attention to detail and creative vision exceeded all expectations. Every corner of our home now feels like a five-star hotel!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Client">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <p>Homeowner, Manhattan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-text">"Working with LUXE was an absolute pleasure. They listened to our needs, respected our budget, and delivered a workspace that our employees love. Productivity has increased significantly since the redesign!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" alt="Client">
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <p>CEO, Tech Innovations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-text">"From our initial consultation to the final reveal, LUXE demonstrated professionalism and creativity. They turned our house into a home that perfectly reflects our family's personality. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Client">
+                            <div>
+                                <h4>Emily Rodriguez</h4>
+                                <p>Homeowner, Austin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev">❮</button>
+                    <button class="testimonial-next">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Create<br>Something Beautiful</h2>
+                    <p>Ready to transform your space? Schedule a free consultation with our design experts today.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>123 Design Avenue<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 123-4567<br>Mon-Sat: 9AM - 6PM</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>hello@luxeinteriors.com<br>info@luxeinteriors.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Pinterest</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Project Type</option>
+                                <option value="residential">Residential Design</option>
+                                <option value="commercial">Commercial Space</option>
+                                <option value="luxury">Luxury Design</option>
+                                <option value="consultation">Consultation Only</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Budget Range</option>
+                                <option value="10-25k">$10,000 - $25,000</option>
+                                <option value="25-50k">$25,000 - $50,000</option>
+                                <option value="50-100k">$50,000 - $100,000</option>
+                                <option value="100k+">$100,000+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your project..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Schedule Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Modal -->
+    <div class="modal" id="consultModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="modal-title">Free Design Consultation</h2>
+            <p class="modal-subtitle">Let's discuss your vision and explore how we can bring it to life</p>
+            
+            <form id="consultForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Service Interest</option>
+                        <option value="residential">Residential Design</option>
+                        <option value="commercial">Commercial Space</option>
+                        <option value="planning">Space Planning</option>
+                        <option value="luxury">Luxury Design</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="date" placeholder="Preferred Date" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Preferred Time</option>
+                        <option value="morning">Morning (9AM - 12PM)</option>
+                        <option value="afternoon">Afternoon (12PM - 3PM)</option>
+                        <option value="evening">Evening (3PM - 6PM)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Additional details about your project (optional)" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Book Consultation</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Project Detail Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content modal-large">
+            <button class="modal-close">&times;</button>
+            <div class="project-detail">
+                <div class="project-images">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&h=600&fit=crop" alt="Project" id="projectMainImage">
+                </div>
+                <div class="project-info">
+                    <h2 id="projectTitle">Modern Penthouse</h2>
+                    <p class="project-meta" id="projectMeta">Residential · New York · 2023</p>
+                    <p class="project-description" id="projectDescription">A complete transformation of a 3,000 sq ft penthouse in Manhattan. The design combines contemporary aesthetics with functional living spaces, featuring custom millwork, designer furniture, and a sophisticated neutral color palette.</p>
+                    <div class="project-details-list">
+                        <div class="detail-item">
+                            <strong>Area:</strong> 3,000 sq ft
+                        </div>
+                        <div class="detail-item">
+                            <strong>Duration:</strong> 6 months
+                        </div>
+                        <div class="detail-item">
+                            <strong>Style:</strong> Contemporary Modern
+                        </div>
+                    </div>
+                    <button class="btn btn-primary consult-btn">Start Similar Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-top">
+        <svg viewBox="0 0 24 24">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>LUXE INTERIORS</h3>
+                    <p>Creating timeless spaces that inspire and elevate your lifestyle. Award-winning interior design services since 1999.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#process">Our Process</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Residential Design</a></li>
+                        <li><a href="#services">Commercial Spaces</a></li>
+                        <li><a href="#services">Space Planning</a></li>
+                        <li><a href="#services">Luxury Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LUXE Interiors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="intoscript.js"></script>
+</body>
+</html>
